@@ -1,6 +1,6 @@
 # CSGO Pro Settings Distribution
 
-[See some graphs here](https://csgo-pro-settings-distribution.vercel.app/)
+[See some simple graphs here](https://csgo-pro-settings-92jx-9xl3b0ppu-lindeneg.vercel.app/)
 
 ### Why
 
@@ -11,6 +11,8 @@ He was under the impression that black-bars still is the most popular, while I w
 We tried answering the question, as always, via Google but the articles we found were simply not trustworthy - and I failed to find any that actually contained information of where and how they got their data.
 
 So I said fuck it, and used a few hours to build a scraper to get the data from Liquidpedia, which has a stellar reputation when it comes to player details.
+
+I've only utilized a subset of all available data, so if you fancy, take a look at the cached HTML and the scraper, and modify it to your needs.
 
 ### Usage
 
