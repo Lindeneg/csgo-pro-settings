@@ -116,7 +116,7 @@ const Chart = ({ wrapperClass, canvasId, withPercentage, xLabel, yLabel, display
 
             chartId.current = chart.id;
         }
-    }, []);
+    }, [xLabel, yLabel, displayLegend, withPercentage, opts]);
 
     return (
         <div className={wrapperClassName}>

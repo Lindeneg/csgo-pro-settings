@@ -17,7 +17,7 @@ So I said fuck it, and used a few hours to build a scraper to get the data from 
 ##### Clone
 
 ```
-git clone git@github.com:Lindeneg/csgo-pro-settings-distribution.git && cd csgo-pro-settings-distribution
+git clone git@github.com:Lindeneg/csgo-pro-settings.git && cd csgo-pro-settings
 ```
 
 ##### Install
