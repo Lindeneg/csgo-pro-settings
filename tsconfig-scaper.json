@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "lib": ["ESNext", "DOM"],
+        "outDir": "./dist-scraper",
+        "declaration": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false
+    },
+    "include": ["./scraper"]
+}

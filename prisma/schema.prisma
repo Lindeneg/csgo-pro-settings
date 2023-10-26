@@ -1,0 +1,29 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./db/data.db"
+}
+
+model Player {
+  id              String    @id @default(uuid())
+  name            String    @unique
+  createdAt       DateTime  @default(now())
+  dataSubmittedAt DateTime?
+  foundFromTeam   String?
+  mouse           String?
+  monitor         String?
+  scaling         Int?
+  resolution      String?
+  href            String?
+  refreshRate     Int?
+  eDpi            Int?
+  dpi             Int?
+  pollingRate     Int?
+  sensitivity     Float?
+  zoomSensitivity Float?
+  rawInput        Boolean?
+  playerSubmitted Boolean?
+}
