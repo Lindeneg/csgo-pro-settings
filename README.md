@@ -1,6 +1,6 @@
 # CSGO Pro Settings Distribution
 
-[See some simple graphs here](https://csgo-pro-settings-92jx-9xl3b0ppu-lindeneg.vercel.app/)
+[See some simple graphs here](csgo-pro-settings-92jx.vercel.app/)
 
 ### Why
 
