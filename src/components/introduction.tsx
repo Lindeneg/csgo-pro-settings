@@ -22,7 +22,7 @@ const Introduction = ({ playerCount }: IntroductionProps) => {
                     The code and data is open-source and available{' '}
                     <a
                         className="underline"
-                        href="https://github.com/Lindeneg/csgo-pro-settings-distribution"
+                        href="https://github.com/Lindeneg/csgo-pro-settings"
                         target="_blank"
                     >
                         here
