@@ -8,7 +8,19 @@ import toRawInputChart from '@/mappers/to-raw-input-chart';
 import toResolutionScaleChart from '@/mappers/to-resolution-scale-chart';
 import Introduction from '@/components/introduction';
 
+interface StupidlyCachedData {
+    playerCount: number;
+    charts: (ChartWithTitleProps | ChartWithTitleProps[])[];
+}
+
+const CACHE_KEY = 'what-are-you-even-doing';
+const stupidlySimpleInMemoryCache = new Map<typeof CACHE_KEY, StupidlyCachedData | null>([[CACHE_KEY, null]]);
+
 export const getServerSideProps = (async () => {
+    const cached = stupidlySimpleInMemoryCache.get(CACHE_KEY);
+
+    if (cached !== null && cached?.playerCount && cached.charts.length) return { props: cached };
+
     const { scaling, rawInput, resolution, scaleRes, sensDpi } = await data.getPlayersData();
     const playerCount = await data.getPlayerCount();
 
@@ -19,6 +31,8 @@ export const getServerSideProps = (async () => {
     const rawInputChart = toRawInputChart(rawInput);
 
     const charts = [dpiSensChart, resScaleChart, resChart, [scaleChart, rawInputChart]];
+
+    stupidlySimpleInMemoryCache.set(CACHE_KEY, { playerCount, charts });
 
     return { props: { charts, playerCount } };
 }) satisfies GetServerSideProps<{
