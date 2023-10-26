@@ -19,7 +19,7 @@ I've only utilized a subset of all available data, so if you fancy, take a look 
 ##### Clone
 
 ```
-git clone git@github.com:Lindeneg/csgo-pro-settings-distribution.git && cd csgo-pro-settings-distribution
+git clone git@github.com:Lindeneg/csgo-pro-settings.git && cd csgo-pro-settings
 ```
 
 ##### Install
