@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./db/data.db"
+  provider = "mongodb"
+  url      = env("MONGO_DB")
 }
 
 model Player {
-  id              String    @id @default(uuid())
+  id              String    @id @default(uuid()) @map("_id")
   name            String    @unique
   createdAt       DateTime  @default(now())
   dataSubmittedAt DateTime?
