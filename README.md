@@ -14,6 +14,9 @@ So I said fuck it, and used a few hours to build a scraper to get the data from 
 
 I've only utilized a subset of all available data, so if you fancy, take a look at the cached HTML and the scraper, and modify it to your needs.
 
+The code was written quick and is rather dirty and there's no `Promise.all`. This made the initial execution with rate-limiting easy but sucks now when everything is cached.
+It's not too bad though, I can populate db in around 20 sec.
+
 ### Usage
 
 ##### Clone
